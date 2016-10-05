@@ -1,0 +1,82 @@
+#!/bin/bash
+
+# User Parameters
+PROCESSES="wget"
+NETWORKIPS=""
+#"10.0.0.2 10.0.0.3 10.0.0.4 10.0.0.5 10.0.0.7"
+MAXTEMPERATURE=70.0
+APACHELOG=/var/log/apache2/access.log
+APACHE_MINS_INACTIVE=60
+
+# Constants
+TRUE="true"
+FALSE="false"
+
+echo `w | head -1`
+
+# Check if there is someone logged in
+NUSERS=`users|wc -l`
+if [ $NUSERS -gt 0 ]; then
+   echo $TRUE logged users: $NUSERS
+else
+   echo $FALSE no logged users.
+fi
+
+# Check if there  hasn't been web-activity for a while
+LASTAPACHEACCESS=`stat -c %Y $APACHELOG`
+CURRENTDATE=`date +%s`
+let TIMEDIFF=($CURRENTDATE-$LASTAPACHEACCESS)/60
+
+if [ $TIMEDIFF -le $APACHE_MINS_INACTIVE ]; then
+   echo $TRUE apache inactivity: $TIMEDIFF mins
+else
+   echo $FALSE apache inactivity: $TIMEDIFF mins
+fi
+
+# Check if temperature is too high
+TEMPERATURA=`sensors | grep high | cut -c16-19`
+TEMPCHECK=`awk 'BEGIN{ print "'$MAXTEMPERATURE'"<"'$TEMPERATURA'" }'`
+if [ $TEMPCHECK -eq 1 ]; then
+   echo $TRUE high_temperature: $TEMPERATURA
+else
+   echo $FALSE temperature: $TEMPERATURA
+fi
+
+# Check if connected to the internet
+#PINGWWW=`ping 8.8.8.8 -c 3 | grep Unreachable |wc -l`
+#if [ $PINGWWW -lt 3 ]; then
+#   echo $TRUE connected to the internet.
+#else
+#    echo $FALSE not connected to the internet.
+#fi
+
+# Check if any host is up
+for ip in $NETWORKIPS
+do
+   PINGN=`ping $ip -c 3|grep Unreachable|wc -l`
+
+   if [ $PINGN -lt 3 ]; then
+      echo $TRUE ping $ip
+   else
+      echo $FALSE ping $ip
+   fi
+done
+
+# Check for active bittorrent downloads
+TORRENTACT=`transmission-remote --auth $TRANSMISSION_USERNAME:$TRANSMISSION_PASSWORD -l 2>/dev/null | grep Down | wc -l`
+TORRENTACT=`expr $TORRENTACT - 1`
+if [ $TORRENTACT -gt 0 ]; then
+   echo $TRUE torrent downloads: $TORRENTACT
+else
+   echo $FALSE no torrent downloads
+fi
+
+# Check if any "very important process" is running
+for process in $PROCESSES
+do
+   if [ `ps aux | grep $process | wc -l` -gt 1 ]; then
+      echo $TRUE process exists: $process
+   else
+      echo $FALSE process down: $process
+   fi
+done

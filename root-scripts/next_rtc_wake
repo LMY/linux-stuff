@@ -1,0 +1,24 @@
+#!/bin/bash
+TODAYIS=`date +%u`
+TIMEIS=`date +%k%M`
+
+if [ "$TIMEIS" -le "845" ] ; then
+	if [ "$TODAYIS" == "5" ] ; then
+			NEXTDATE=`date +%s --date='today +2 day 08:00:00'`
+	elif [  "$TODAYIS" == "6" ] ; then
+			NEXTDATE=`date +%s --date='today +1 day 08:00:00'`
+	else
+			NEXTDATE=`date +%s --date='today 08:00:00'`
+	fi
+else
+	if [ "$TODAYIS" == "5" ] ; then
+			NEXTDATE=`date +%s --date='tomorrow +2 day 08:00:00'`
+	elif [  "$TODAYIS" == "6" ] ; then
+			NEXTDATE=`date +%s --date='tomorrow +1 day 08:00:00'`
+	else
+			NEXTDATE=`date +%s --date='tomorrow 08:00:00'`
+	fi
+fi
+
+echo $NEXTDATE
+

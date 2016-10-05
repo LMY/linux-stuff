@@ -1,0 +1,4 @@
+#!/bin/bash
+echo 0 > /sys/class/rtc/rtc0/wakealarm
+echo `date '+%s' -d '+ 5 minutes'` > /sys/class/rtc/rtc0/wakealarm
+cat /sys/class/rtc/rtc0/wakealarm

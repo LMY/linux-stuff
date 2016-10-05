@@ -1,0 +1,5 @@
+30 17 * * * /root/scripts/haltiifidle
+20 * * * * /root/scripts/rtc_wake
+10 8 * * * /usr/sbin/service transmission-daemon restart
+15 * * * * /root/scripts/ovhupdate
+

@@ -1,0 +1,14 @@
+#!/bin/bash
+
+COMMAND="sudo poweroff"
+LOG=/root/idlehalt.log
+SCRIPT=/root/scripts/checkactivity
+
+RES=`$SCRIPT | grep true`
+
+if [ -z "$RES" ]; then
+   echo "`date` Idle. Executing $COMMAND" >> $LOG
+   `$COMMAND`
+else
+   echo "`date` not idle: $RES" >> $LOG
+fi

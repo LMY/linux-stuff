@@ -1,0 +1,9 @@
+#!/bin/bash
+
+if [ $# != 1 ]; then
+        echo "usage: $0 <file>"
+else
+        mv $1 $1.backup
+	nano $1
+fi;
+

@@ -1,0 +1,7 @@
+#!/bin/bash
+
+TIMESTAMP=`date +%s`
+TEMP=`~/scripts/temperatura`
+
+echo "$TIMESTAMP $TEMP" >> ~logs/temperatura.log
+

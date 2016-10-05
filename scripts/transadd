@@ -1,0 +1,8 @@
+#!/bin/bash
+TRANSMISSION=/usr/bin/transmission-remote
+
+if [ $# != 1 ]; then
+	echo "usage: $0 <magnet>"
+else
+	$TRANSMISSION --auth $TRANSMISSION_USERNAME:$TRANSMISSION_PASSWORD --add $1
+fi;

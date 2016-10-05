@@ -1,0 +1,3 @@
+#!/bin/bash
+#df -h | grep md0 | cut -c31-34
+df -h | grep md0 | cut -c69-73

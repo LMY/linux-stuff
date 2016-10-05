@@ -1,0 +1,3 @@
+#!/bin/bash
+#clear;echo Free Space: `freespace`;transstatus
+clear;date;echo "Temperature: `temperature`";dfree;echo "";transstatus

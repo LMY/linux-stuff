@@ -1,0 +1,9 @@
+#!/bin/bash
+
+if [ $# != 2 ]; then
+        echo "usage: $0 <command> <file>"
+else
+	while read -u 12 p; do
+	  $1 $p
+	done 12<$2
+fi;

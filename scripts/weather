@@ -1,0 +1,4 @@
+#!/bin/bash
+echo Weather for: $1
+w3m -dump "http://www.google.com/search?hl=en&q=${1}+weather" | grep country | awk '{print $2}'
+

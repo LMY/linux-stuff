@@ -1,0 +1,2 @@
+#!/bin/bash
+transmission-remote --auth $TRANSMISSION_USERNAME:$TRANSMISSION_PASSWORD -l

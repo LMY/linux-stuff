@@ -1,0 +1,9 @@
+
+#!/bin/bash
+
+if [ $# != 1 ]; then
+	echo "usage: $0 <url>"
+else
+	http $1 | grep magnet | sed "s/announce' .*/announce/" | sed "s/^.*'//"
+fi;
+

@@ -1,0 +1,2 @@
+#!/bin/bash
+sensors | grep high | cut -c16-19

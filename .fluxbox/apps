@@ -1,0 +1,23 @@
+[app] (name=lxterminal) {1}
+  [Workspace]	{0}
+  [Dimensions]	{98% 37%}
+  [Position]	(UPPERLEFT)	{1% 63%}
+  [Deco]	{NONE}
+[end]
+[app] (name=lxterminal)
+  [Position]	(UPPERLEFT)	{1% 1%}
+  [Deco]	{NONE}
+[end]
+[app] (name=grun) (class=Grun)
+  [Position]	(CENTER)	{0 0}
+  [Layer]	{2}
+[end]
+[app] (name=Navigator) (class=Firefox) (role=browser) {1}
+  [Workspace]	{0}
+[end]
+[app] (name=audacious) (class=Audacious) {1}
+  [Workspace]	{0}
+[end]
+[app] (name=pcmanfm) (class=Pcmanfm) {1}
+  [Workspace]	{0}
+[end]

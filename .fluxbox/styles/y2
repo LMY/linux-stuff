@@ -1,0 +1,157 @@
+
+############################################################## FONTS ##########
+					
+menu.frame.font:					sans-9:bold
+menu.title.font:					sans-10:bold
+toolbar.clock.font:					sans-9:bold
+toolbar.workspace.font:				sans-10:bold
+toolbar.iconbar.focused.font:		sans-8:bold
+toolbar.iconbar.unfocused.font:		sans-8
+window.font:						sans-8
+
+############################################################## MENU ###########
+
+menu.bevelWidth:						1
+
+#menu.itemHeight:						35
+#menu.titleHeight:						21
+menu.borderColor:						#041541
+menu.borderWidth:						1
+
+menu.bullet:							triangle
+menu.bullet.position:					Right
+menu.frame.underlineColor:				#e7e7e7
+
+menu.title:								flat gradient vertical
+menu.title.justify:						center
+menu.title.color:						#0e37ab
+menu.title.colorTo:						#0e2872
+menu.title.textColor:					#e7e7e7
+
+menu.frame:								flat gradient crossdiagonal	
+menu.frame.justify:						left
+menu.frame.color:						#F0EFE9
+menu.frame.colorTo:						#BFBEB2
+menu.frame.textColor:					#636363
+menu.frame.disableColor:				#5E873A
+
+menu.hilite:							flat gradient vertical
+menu.hilite.color:						#0e37ab
+menu.hilite.colorTo:					#0e2872
+menu.hilite.textColor:					#e7e7e7			
+
+############################################################## TOOLBAR ########
+
+toolbar.bevelWidth:						0
+
+toolbar.borderWidth:					1
+toolbar.borderColor:					#041541
+
+toolbar.height:							21
+
+toolbar.justify:						center
+
+toolbar:								flat gradient vertical
+toolbar.pixmap:				
+toolbar.color:							#F0E9EF
+toolbar.colorTo:						#BFB2BE
+
+toolbar.clock:							parentrelative
+toolbar.clock.justify:					center
+toolbar.clock.color:					#
+toolbar.clock.colorTo:					#
+toolbar.clock.textColor:				#0e2872
+
+toolbar.workspace:						parentrelative
+toolbar.workspace.justify:				Center
+toolbar.workspace.color:				#
+toolbar.workspace.colorTo:				#
+toolbar.workspace.textColor:			#0e2872
+
+toolbar.button:							parentrelative 
+toolbar.button.color:					#
+toolbar.button.colorTo:					#
+toolbar.button.picColor:				#0e2872
+toolbar.button.pressed:					parentrelative 
+toolbar.button.pressed.color:			#
+toolbar.button.pressed.colorTo:			#
+toolbar.button.pressed.picColor:		#000000
+
+toolbar.iconbar.borderWidth:			1
+toolbar.iconbar.borderColor:			#041541
+
+toolbar.iconbar.empty:					parentrelative
+toolbar.iconbar.empty.color:			#
+toolbar.iconbar.empty.colorTo:			#
+
+toolbar.iconbar.focused.borderWidth:	1
+toolbar.iconbar.focused.borderColor:	#041541
+toolbar.iconbar.focused:				flat gradient vertical
+toolbar.iconbar.focused.color:			#0e2872
+toolbar.iconbar.focused.colorTo:		#0e37ab
+toolbar.iconbar.focused.textColor:		#e7e7e7
+toolbar.iconbar.focused.justify:		center
+
+toolbar.iconbar.unfocused.borderWidth:	1
+toolbar.iconbar.unfocused.borderColor:	#041541
+toolbar.iconbar.unfocused:				flat gradient vertical
+toolbar.iconbar.unfocused.color:		#F0E9EF
+toolbar.iconbar.unfocused.colorTo:		#BFB2BE
+toolbar.iconbar.unfocused.textColor:	#0e2872
+toolbar.iconbar.unfocused.justify:		center
+
+############################################################## WINDOW #########
+window.roundCorners: 				TopRight TopLeft BottomLeft BottomRight
+window.bevelWidth:					1
+window.shade:						false
+window.borderWidth:					1
+window.borderColor:					#041541
+
+window.justify:						Center
+
+window.title.height:				21
+
+window.title.focus:					flat gradient vertical
+window.title.focus.color:			#0e37ab
+window.title.focus.colorTo:			#0e2872
+window.title.unfocus:				flat gradient vertical
+window.title.unfocus.color:			#F0E9EF
+window.title.unfocus.colorTo:		#BFB2BE
+
+window.label.focus:					parentrelative
+window.label.focus.color:			#
+window.label.focus.colorTo:			#
+window.label.focus.textColor:		#e7e7e7
+window.label.unfocus:				parentrelative
+window.label.unfocus.color:			#
+window.label.unfocus.colorTo:		#
+window.label.unfocus.textColor:		#0e2872
+
+window.button.focus:				parentrelative
+window.button.focus.color:      	#
+window.button.focus.colorTo:      	#
+window.button.focus.picColor:		#ffffff
+window.button.unfocus:				parentrelative
+window.button.unfocus.Color:		#
+window.button.unfocus.ColorTo:		#
+window.button.unfocus.picColor:		#09236d
+window.button.pressed:				parentrelative
+window.button.pressed.color:		#
+window.button.pressed.colorTo:		#
+window.button.pressed.picColor:		#000000
+
+window.handle.focus:				flat
+window.handle.focus.color:			#AD7ED0
+window.handle.focus.colorTo:		#AD7ED0
+window.handle.unfocus:				flat
+window.handle.unfocus.color:		#F0E9EF
+window.handle.unfocus.colorTo:		#F0E9EF
+window.handleWidth:					2
+
+window.grip.focus:					flat
+window.grip.focus.color:			#09236d
+window.grip.focus.colorTo:			#09236d
+window.grip.unfocus:				flat
+window.grip.unfocus.color:			#09236d
+window.grip.unfocus.colorTo:		#09236d
+

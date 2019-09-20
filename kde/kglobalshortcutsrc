@@ -1,5 +1,5 @@
 [KDE Keyboard Layout Switcher]
-Switch to Next Keyboard Layout=Ctrl+Alt+K,none,Switch to Next Keyboard Layout
+Switch to Next Keyboard Layout=none,none,Switch to Next Keyboard Layout
 _k_friendly_name=KDE Daemon
 
 [firefox.desktop]
@@ -9,7 +9,7 @@ new-private-window=,none,Open a New Private Window
 new-window=none,none,Open a New Window
 
 [kaccess]
-Toggle Screen Reader On and Off=Meta+Alt+S,Meta+Alt+S,Toggle Screen Reader On and Off
+Toggle Screen Reader On and Off=none,Meta+Alt+S,Toggle Screen Reader On and Off
 _k_friendly_name=Accessibility
 
 [kcm_touchpad]
@@ -25,7 +25,7 @@ display=Display\tMeta+P,Display\tMeta+P,Switch Display
 
 [khotkeys]
 _k_friendly_name=KDE Daemon
-{6907dee1-6e53-49ac-992b-06941eeeea5c}=Meta+Print,none,Take Active Window Screenshot
+{6907dee1-6e53-49ac-992b-06941eeeea5c}=Ctrl+Print,none,Take Active Window Screenshot
 {6c7b4786-59a0-445b-b3d0-feec5f9ff254}=Meta+Shift+Print,none,Take Rectangular Region Screenshot
 {d03619b6-9b3c-48cc-9d9c-a2aadb485550}=,none,Search
 {ebf10ce2-9241-410a-a691-bf7585de4688}=Shift+Print,none,Take Full Screen Screenshot
@@ -42,36 +42,36 @@ mute=Volume Mute,Volume Mute,Mute
 
 [krunner]
 _k_friendly_name=Run Command
-run command=Alt+Space\tAlt+F2\tSearch,Alt+Space,Run Command
-run command on clipboard contents=Alt+Shift+F2,Alt+Shift+F2,Run Command on clipboard contents
+run command=Meta+R\t\tSearch,Alt+Space,Run Command
+run command on clipboard contents=none,Alt+Shift+F2,Run Command on clipboard contents
 
 [ksmserver]
-Halt Without Confirmation=Ctrl+Alt+Shift+PgDown,none,Halt Without Confirmation
+Halt Without Confirmation=none,none,Halt Without Confirmation
 Lock Session=Meta+L\tScreensaver,Ctrl+Alt+L\tScreensaver,Lock Session
-Log Out=Ctrl+Alt+Del,none,Log Out
-Log Out Without Confirmation=Ctrl+Alt+Shift+Del,none,Log Out Without Confirmation
-Reboot Without Confirmation=Ctrl+Alt+Shift+PgUp,none,Reboot Without Confirmation
+Log Out=Meta+Ctrl+L,none,Log Out
+Log Out Without Confirmation=none,none,Log Out Without Confirmation
+Reboot Without Confirmation=none,none,Reboot Without Confirmation
 _k_friendly_name=ksmserver
 
 [kwin]
 Activate Window Demanding Attention=Ctrl+Alt+A,Ctrl+Alt+A,Activate Window Demanding Attention
 Decrease Opacity=none,none,Decrease Opacity of Active Window by 5 %
-Expose=Ctrl+F9,Ctrl+F9,Toggle Present Windows (Current desktop)
-ExposeAll=Ctrl+F10\tLaunch (C),Ctrl+F10\tLaunch (C),Toggle Present Windows (All desktops)
-ExposeClass=Ctrl+F7,Ctrl+F7,Toggle Present Windows (Window class)
+Expose=Meta+F9,Ctrl+F9,Toggle Present Windows (Current desktop)
+ExposeAll=Meta+F10\tLaunch (C),Ctrl+F10\tLaunch (C),Toggle Present Windows (All desktops)
+ExposeClass=Meta+F7,Ctrl+F7,Toggle Present Windows (Window class)
 Increase Opacity=none,none,Increase Opacity of Active Window by 5 %
 Invert Screen Colors=none,none,Invert Screen Colors
-Kill Window=Ctrl+Alt+Esc,Ctrl+Alt+Esc,Kill Window
+Kill Window=Meta+K,Ctrl+Alt+Esc,Kill Window
 MoveMouseToCenter=Meta+F6,Meta+F6,Move Mouse to Center
-MoveMouseToFocus=Meta+F5,Meta+F5,Move Mouse to Focus
-MoveZoomDown=Meta+Ctrl+Down,Meta+Ctrl+Down,Move Zoomed Area Downwards
-MoveZoomLeft=Meta+Ctrl+Left,Meta+Ctrl+Left,Move Zoomed Area to Left
-MoveZoomRight=Meta+Ctrl+Right,Meta+Ctrl+Right,Move Zoomed Area to Right
-MoveZoomUp=Meta+Ctrl+Up,Meta+Ctrl+Up,Move Zoomed Area Upwards
+MoveMouseToFocus=none,Meta+F5,Move Mouse to Focus
+MoveZoomDown=none,Meta+Ctrl+Down,Move Zoomed Area Downwards
+MoveZoomLeft=none,Meta+Ctrl+Left,Move Zoomed Area to Left
+MoveZoomRight=none,Meta+Ctrl+Right,Move Zoomed Area to Right
+MoveZoomUp=none,Meta+Ctrl+Up,Move Zoomed Area Upwards
 Remove Window From Group=none,none,Remove Window From Group
 Setup Window Shortcut=none,none,Setup Window Shortcut
 Show Desktop=Meta+D,none,Show Desktop
-ShowDesktopGrid=Ctrl+F8,Ctrl+F8,Show Desktop Grid
+ShowDesktopGrid=Meta+F8,Ctrl+F8,Show Desktop Grid
 Suspend Compositing=Alt+Shift+F12,Alt+Shift+F12,Suspend Compositing
 Switch One Desktop Down=none,none,Switch One Desktop Down
 Switch One Desktop Up=none,none,Switch One Desktop Up
@@ -94,7 +94,7 @@ Switch to Desktop 18=none,none,Switch to Desktop 18
 Switch to Desktop 19=none,none,Switch to Desktop 19
 Switch to Desktop 2=Meta+F2,Ctrl+F2,Switch to Desktop 2
 Switch to Desktop 20=none,none,Switch to Desktop 20
-Switch to Desktop 3=none,Ctrl+F3,Switch to Desktop 3
+Switch to Desktop 3=Meta+F3,Ctrl+F3,Switch to Desktop 3
 Switch to Desktop 4=Meta+F4,Ctrl+F4,Switch to Desktop 4
 Switch to Desktop 5=none,none,Switch to Desktop 5
 Switch to Desktop 6=none,none,Switch to Desktop 6
@@ -243,15 +243,15 @@ activate task manager entry 8=Meta+8,Meta+8,Activate Task Manager Entry 8
 activate task manager entry 9=Meta+9,Meta+9,Activate Task Manager Entry 9
 activate widget 3=Alt+F1,none,Activate Application Launcher Widget
 clear-history=none,none,Clear Clipboard History
-clipboard_action=Ctrl+Alt+X,Ctrl+Alt+X,Enable Clipboard Actions
+clipboard_action=none,Ctrl+Alt+X,Enable Clipboard Actions
 cycleNextAction=none,none,Next History Item
 cyclePrevAction=none,none,Previous History Item
 edit_clipboard=none,none,Edit Contents...
-manage activities=Meta+Q,Meta+Q,Activities...
-next activity=Meta+Tab,none,Walk through activities
-previous activity=Meta+Shift+Tab,none,Walk through activities (Reverse)
-repeat_action=Ctrl+Alt+R,Ctrl+Alt+R,Manually Invoke Action on Current Clipboard
-show dashboard=Ctrl+F12,Ctrl+F12,Show Desktop
+manage activities=none,Meta+Q,Activities...
+next activity=none,none,Walk through activities
+previous activity=none,none,Walk through activities (Reverse)
+repeat_action=none,Ctrl+Alt+R,Manually Invoke Action on Current Clipboard
+show dashboard=none,Ctrl+F12,Show Desktop
 show-barcode=none,none,Show Barcode...
 show-on-mouse-pos=none,none,Open Klipper at Mouse Position
-stop current activity=Meta+S,Meta+S,Stop Current Activity
+stop current activity=none,Meta+S,Stop Current Activity
